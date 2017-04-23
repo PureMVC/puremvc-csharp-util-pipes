@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Saad Shams</Authors>
+    <Company>Futurescale, Inc.</Company>
+    <Description>This utility provides the capability for creating pipelines that pass messages between Cores in a PureMVC MultiCore-based application. Pipelines can contain filters, queues, splitting and merging tees, and more.</Description>
+    <Copyright>Copyright © 2017 Saad Shams, Futurescale, Inc.</Copyright>
+    <PackageLicenseUrl>https://github.com/PureMVC/puremvc-csharp-util-pipes/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>http://puremvc.org/images/puremvc-logo.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/PureMVC/puremvc-csharp-util-pipes</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Pipes, PureMVC</PackageTags>
+    <NeutralLanguage>English</NeutralLanguage>
+    <PackageId>PureMVC.Pipes</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.4\Pipes.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.4\Pipes.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PureMVC" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
