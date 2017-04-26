@@ -1,6 +1,7 @@
 ## [PureMVC](http://puremvc.github.com/) [C#](https://github.com/PureMVC/puremvc-csharp-multicore-framework/wiki) Utility: Pipes
 
-This utility provides the capability for creating pipelines that pass messages between Cores in a PureMVC MultiCore-based application. Pipelines can contain filters, queues, splitting and merging tees, and more. Unit Tests included.
+This utility provides the capability for creating pipelines that pass messages between Cores in a [PureMVC C# MultiCore](https://github.com/PureMVC/puremvc-csharp-multicore-framework/wiki)-based application. 
+Pipelines can contain filters, queues, splitting and merging tees, and more. Unit Tests included.
 
 * [API Docs](http://puremvc.org/pages/docs/CSharp/pipes/)
 * [Unit Tests](http://puremvc.github.io/pages/images/screenshots/PureMVC-Shot-CSharp-Pipes-UnitTests.png)
