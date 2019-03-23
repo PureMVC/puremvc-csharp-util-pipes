@@ -9,7 +9,7 @@ Pipelines can contain filters, queues, splitting and merging tees, and more. Uni
 * [Pipes Overview Presentation](http://puremvc.tv/#P002/T220)
 
 ## Nuget Installation
-`Install-Package PureMVC.Multicore.Pipes`
+`dotnet add package PureMVC.Multicore.Pipes`
 
 ## Platforms / Technologies
 * [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
