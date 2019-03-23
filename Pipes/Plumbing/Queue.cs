@@ -37,7 +37,7 @@ namespace Pipes.Plumbing
         /// Queue constructor
         /// </summary>
         /// <param name="output">Optional output pipe</param>
-        public Queue(IPipeFitting output=null) : base(output)
+        public Queue(IPipeFitting output = null) : base(output)
         {
         }
 
@@ -133,6 +133,6 @@ namespace Pipes.Plumbing
         protected List<IPipeMessage> Messages { get; } = new List<IPipeMessage>();
 
         /// <summary>Get or Set the mode.</summary>
-        protected string Mode{ get; set; } = QueueControlMessage.SORT;
+        protected string Mode { get; set; } = QueueControlMessage.SORT;
     }
 }

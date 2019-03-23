@@ -79,7 +79,8 @@ namespace Pipes.Plumbing
                         success = false;
                         break;
                 }
-            } else
+            }
+            else
             {
                 success = false;
             }

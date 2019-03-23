@@ -178,6 +178,7 @@ namespace Pipes.Plumbing
         ///     Used by <code>callBackMedhod</code> as a place to store
         ///     the recieved messages.
         /// </para>
+        /// </summary>
         private List<IPipeMessage> messagesReceived = new List<IPipeMessage>();
 
         /// <summary>

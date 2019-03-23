@@ -328,8 +328,8 @@ namespace PipesTest.Plumbing.PipeTest
         /// Callback given to <code>PipeListener</code> for incoming message.
         /// <para>
         ///     Used by <code>testReceiveMessageViaPipeListener</code> 
-        ///     to get the output of pipe back into this  test to see 
-        ///     that a message passes through the pipe.</P>
+        ///     to get the output of pipe back into this test to see 
+        ///     that a message passes through the pipe.
         /// </para>
         /// </summary>
         /// <param name="message"></param>

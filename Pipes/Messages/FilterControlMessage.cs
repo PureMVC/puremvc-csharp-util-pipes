@@ -63,12 +63,12 @@ namespace Pipes.Messages
         /// <param name="type"></param>
         /// <param name="name"></param>
         /// <param name="filter"></param>
-        /// <param name="_params"></param>
-        public FilterControlMessage(string type, string name, Func<IPipeMessage, object, bool> filter = null, object _params = null) : base(type)
+        /// <param name="params"></param>
+        public FilterControlMessage(string type, string name, Func<IPipeMessage, object, bool> filter = null, object @params = null) : base(type)
         {
             Name = name;
             Filter = filter;
-            Params = _params;
+            Params = @params;
         }
 
         /// <summary>Get or Set the target filter name.</summary>

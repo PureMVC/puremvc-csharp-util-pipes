@@ -9,7 +9,7 @@ Pipelines can contain filters, queues, splitting and merging tees, and more. Uni
 * [Pipes Overview Presentation](http://puremvc.tv/#P002/T220)
 
 ## Nuget Installation
-`Install-Package PureMVC.Pipes`
+`Install-Package PureMVC.Multicore.Pipes`
 
 ## Platforms / Technologies
 * [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
@@ -20,10 +20,10 @@ Pipelines can contain filters, queues, splitting and merging tees, and more. Uni
 * [HoloLens](https://en.wikipedia.org/wiki/Microsoft_HoloLens)
 
 ## Status
-Production - [Version 1.0](https://github.com/PureMVC/puremvc-csharp-util-pipes/blob/master/VERSION)
+Production - [Version 1.1](https://github.com/PureMVC/puremvc-csharp-util-pipes/blob/master/VERSION)
 
 ## License
-* PureMVC CSharp MultiCore Utility – Pipes - Copyright © 2017 [Saad Shams](http://saad.io)
+* PureMVC CSharp MultiCore Utility – Pipes - Copyright © 2017 [Saad Shams](https://www.linkedin.com/in/muizz)
 * PureMVC - Copyright © 2017 [Futurescale, Inc.](http://futurescale.com/)
 * All rights reserved.
 

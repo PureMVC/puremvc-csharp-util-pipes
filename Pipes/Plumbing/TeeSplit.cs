@@ -32,7 +32,7 @@ namespace Pipes.Plumbing
         /// </remarks>
         /// <param name="output1">Output pipe</param>
         /// <param name="output2">Output pipe</param>
-        public TeeSplit(IPipeFitting output1=null, IPipeFitting output2=null)
+        public TeeSplit(IPipeFitting output1 = null, IPipeFitting output2 = null)
         {
             if (output1 != null) Connect(output1);
             if (output2 != null) Connect(output2);
@@ -72,7 +72,8 @@ namespace Pipes.Plumbing
                 IPipeFitting pipe = outputs[outputs.Count - 1];
                 outputs.RemoveAt(outputs.Count - 1);
                 return pipe;
-            } else
+            }
+            else
             {
                 return null;
             }

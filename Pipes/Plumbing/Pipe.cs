@@ -25,7 +25,7 @@ namespace Pipes.Plumbing
         /// Constructor with an optional output <c>Pipe</c>
         /// </summary>
         /// <param name="output"></param>
-        public Pipe(IPipeFitting output=null)
+        public Pipe(IPipeFitting output = null)
         {
             if (output != null) Connect(output);
         }
@@ -43,8 +43,8 @@ namespace Pipes.Plumbing
         /// <returns>Boolean true if no other fitting was already connected.</returns>
         public virtual bool Connect(IPipeFitting output)
         {
-           bool success = false;
-           if(Output == null)
+            bool success = false;
+            if(Output == null)
             {
                 Output = output;
                 success = true;

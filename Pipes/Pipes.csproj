@@ -1,31 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>Saad Shams</Authors>
-    <Company>Futurescale, Inc.</Company>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>PureMVC.Multicore.Pipes</PackageId>
+    <Version>1.1.0</Version>
     <Description>This utility provides the capability for creating pipelines that pass messages between Cores in a PureMVC MultiCore-based application. Pipelines can contain filters, queues, splitting and merging tees, and more.</Description>
     <Copyright>Copyright © 2017 Saad Shams, Futurescale, Inc.</Copyright>
+    <license>Creative Commons Attribution 3.0</license>
     <PackageLicenseUrl>https://github.com/PureMVC/puremvc-csharp-util-pipes/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>http://forums.puremvc.org/index.php?topic=2138.0</PackageProjectUrl>
     <PackageIconUrl>http://puremvc.org/images/puremvc-logo.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/PureMVC/puremvc-csharp-util-pipes</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
-    <PackageTags>Pipes, PureMVC</PackageTags>
-    <NeutralLanguage>English</NeutralLanguage>
-    <PackageId>PureMVC.Pipes</PackageId>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.4\Pipes.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.4\Pipes.xml</DocumentationFile>
+    <Authors>Saad Shams</Authors>
+    <Company>Futurescale, Inc.</Company>
+    <PackageTags>Pipes, PureMVC Utility</PackageTags>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PureMVC" Version="1.0.0" />
+    <PackageReference Include="PureMVC.Multicore" Version="2.1.0" />
   </ItemGroup>
 
 </Project>

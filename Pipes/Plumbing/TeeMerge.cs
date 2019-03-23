@@ -37,7 +37,7 @@ namespace Pipes.Plumbing
         /// </remarks>
         /// <param name="input1">Input pipe</param>
         /// <param name="input2">Input pipe</param>
-        public TeeMerge(IPipeFitting input1=null, IPipeFitting input2=null)
+        public TeeMerge(IPipeFitting input1 = null, IPipeFitting input2 = null)
         {
             if (input1 != null) ConnectInput(input1);
             if (input2 != null) ConnectInput(input2);

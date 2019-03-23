@@ -43,7 +43,7 @@ namespace Pipes.Messages
         /// <param name="header"></param>
         /// <param name="body"></param>
         /// <param name="priority"></param>
-        public Message(string type, object header=null, object body=null, int priority=5)
+        public Message(string type, object header = null, object body = null, int priority = 5)
         {
             Type = type;
             Header = header;

@@ -76,7 +76,7 @@ namespace Pipes.Plumbing
         ///         output.
         ///     </para>
         /// </remarks>
-        /// <param name="message"></param>
+        /// <param name="message">Message</param>
         /// <returns>Boolean True if the filter process does not throw an error and subsequent operations in the pipeline succede.</returns>
         public override bool Write(IPipeMessage message)
         {
@@ -89,7 +89,9 @@ namespace Pipes.Plumbing
                     if (Mode == FilterControlMessage.FILTER)
                     {
                         success = ApplyFilter(message) ? Output.Write(message) : false;
-                    } else {
+                    }
+                    else
+                    {
                         success = Output.Write(message);
                     }                    
                     break;
@@ -123,7 +125,7 @@ namespace Pipes.Plumbing
                 case FilterControlMessage.FILTER:
                     if (IsTarget(message))
                     {
-                        mode = message.Type;
+                        Mode = message.Type;
                     }
                     else
                     {
@@ -191,15 +193,8 @@ namespace Pipes.Plumbing
             filter = value;
         }
 
-        /// <summary>Get or set the Filter mode</summary>
-        public string Mode
-        {
-            get { return mode; }
-            set { mode = value; }
-        }
-
-        /// <summary>mode of the filter, default is <c>FilterControlMessage.FILTER</c></summary>
-        protected string mode = FilterControlMessage.FILTER;
+        /// <summary>Get or set the Filter mode, default is <c>FilterControlMessage.FILTER</c></summary>
+        public string Mode { get; set; } = FilterControlMessage.FILTER;
 
         /// <summary> name of the filter</summary>
         protected string name;
